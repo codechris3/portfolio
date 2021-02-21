@@ -1,0 +1,104 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+h1, h2, h3, h4, header {
+  text-align: center;
+}
+/* Everything for the header below */
+header {
+  background-color: rgb(69, 175, 113);
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin: 0px;
+  height: 175px;
+  border-bottom: 2px solid black;
+}
+
+header h1 {
+  font-size: 60px;
+  padding-bottom: 0px;
+  font-family: cursive;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+/* Everything for the main section below */
+main {
+  background-color: lightcyan;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+p, ul, ol {
+  font-size: 14px;
+}
+
+p {
+  padding: 20px;
+}
+
+div article {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+ul, ol {
+  width: 300px;
+}
+
+main article a, link {
+  text-decoration: none;
+}
+
+main div article section {
+  /* text-align: center; */
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+main div img {
+  width: 400px;
+  padding: 60px;
+  border-radius: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  width: 800px;
+  margin: 0px;
+  border: 1px solid rgb(69, 175, 113);
+  background-color: rgb(69, 175, 113);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Everything for the footer below */
+footer {
+  background-color: rgb(69, 175, 113);
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  height: 100px;
+  border-top: 2px solid black;
+  text-align: center;
+}
+
+footer img {
+  width: 30px;
+  padding: 10px;
+  border-radius: 30%;
+}
+
+.large-radius {
+  border-radius: 50%;
+}
