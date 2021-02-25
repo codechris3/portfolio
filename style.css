@@ -7,7 +7,7 @@ h1, h2, h3, h4, header {
 }
 /* Everything for the header below */
 header {
-  background-color: rgb(69, 175, 113);
+  background-color: rgb(33, 128, 64);
   color: white;
   padding-top: 0px;
   padding-bottom: 5px;
@@ -22,12 +22,14 @@ header h1 {
   font-family: cursive;
 }
 
-nav a {
+nav a, nav a:link, nav a:visited, nav a:hover, nav a:active {
   text-decoration: none;
   padding-left: 10px;
   padding-right: 10px;
+  text-decoration: underline;
   color: white;
 }
+
 
 /* Everything for the main section below */
 main {
@@ -84,7 +86,7 @@ hr {
 
 /* Everything for the footer below */
 footer {
-  background-color: rgb(69, 175, 113);
+  background-color: rgb(33, 128, 64);
   color: white;
   padding-top: 5px;
   padding-bottom: 20px;
@@ -102,3 +104,21 @@ footer img {
 .large-radius {
   border-radius: 50%;
 }
+
+/* pseudo code */
+
+a:link    { 
+  color:  black;  
+  }
+
+a:visited { 
+  color: rgb(253, 0, 0); 
+  }
+
+a:hover   { 
+  color: blue; 
+  }
+
+a:active  { 
+  color: hsl(120, 100%, 15%); 
+  }
