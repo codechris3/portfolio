@@ -1,124 +1,262 @@
 * {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} 
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
-h1, h2, h3, h4, header {
+h2,
+h3,
+header {
   text-align: center;
 }
+
+body {
+  margin: 0;
+}
+
 /* Everything for the header below */
+
 header {
-  background-color: rgb(33, 128, 64);
-  color: white;
-  padding-top: 0px;
-  padding-bottom: 5px;
-  margin: 0px;
-  height: 175px;
+  background-color: #272727;
+  margin: none;
   border-bottom: 2px solid black;
 }
 
-header h1 {
-  font-size: 60px;
-  padding-bottom: 0px;
-  font-family: cursive;
+.logo {
+  color: #fff;
+  text-align: center;
+  font-size: 27px;
+  margin: 0;
+  padding-top: 1px;
 }
 
-nav a, nav a:link, nav a:visited, nav a:hover, nav a:active {
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul li a:hover {
+  color: lightcyan;
+  text-decoration: underline;
+}
+
+nav a,
+nav a:link,
+nav a:visited,
+nav a:active {
   text-decoration: none;
   padding-left: 10px;
   padding-right: 10px;
-  text-decoration: underline;
   color: white;
 }
 
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
 
-/* Everything for the main section below */
-main {
-  background-color: lightcyan;
-  padding: 10px;
-  margin-bottom: 0px;
+  .logo {
+    margin: 14px 0;
+    padding-top: 0;
+    font-size: 20px;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul {
+    padding-top: 12px;
+  }
 }
 
-p, ul, ol {
-  font-size: 14px;
+/* Everything for the main section below */
+
+main {
+  margin: none;
+  padding: 10px 0;
+  background-color: lightcyan;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+section.dark-background {
+  background-color: #d4aa7d;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 80px 0;
+}
+
+footer {
+  background-color: #272727;
+  margin: none;
+}
+
+/* ---  Typography --- */
+
+h2 {
+  font-size: 26px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
 }
 
 p {
-  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 16px;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
-div article {
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+main a:link .light-link {
+  color: #d2d8b3;
 }
 
-ul, ol {
-  width: 300px;
-}
-
-main article a, link {
+main a {
+  font-weight: 700;
   text-decoration: none;
 }
 
-main div article section {
-  /* text-align: center; */
-  padding-top: 100px;
-  padding-bottom: 100px;
+main a:link {
+  color: #d4aa7d;
+}
+main a:visited {
+  color: #d4aa7d;
+}
+main a:hover {
+  color: #d2d8b3;
+  text-decoration: underline;
+}
+a:active {
+  color: #d4aa7d;
 }
 
-main div img {
-  width: 400px;
-  padding: 60px;
-  border-radius: 20%;
-  margin-left: auto;
-  margin-right: auto;
+main a:link.light-link {
+  color: #90a9b7;
 }
 
-hr {
-  width: 800px;
-  margin: 0px;
-  border: 1px solid rgb(69, 175, 113);
-  background-color: rgb(69, 175, 113);
-  margin-left: auto;
-  margin-right: auto;
+main a:visited.light-link {
+  color: #90a9b7;
 }
 
-/* Everything for the footer below */
-footer {
-  background-color: rgb(33, 128, 64);
+main a:hover.light-link {
+  color: #d2d8b3;
+  text-decoration: underline;
+}
+a:active {
+  color: #d4aa7d;
+}
+
+footer p {
   color: white;
-  padding-top: 5px;
-  padding-bottom: 20px;
-  height: 100px;
-  border-top: 2px solid black;
   text-align: center;
+  padding: 20px;
+  margin: 0;
 }
 
-footer img {
+main img {
+  width: 100%;
+}
+
+img.image-enhanced {
+  border-radius: 35px;
+}
+
+.group-img {
+  margin: 0 auto;
+}
+
+img.image-link {
   width: 30px;
   padding: 10px;
   border-radius: 30%;
 }
 
-.large-radius {
+img.image-link-radius {
+  width: 30px;
+  padding: 10px;
   border-radius: 50%;
 }
 
-/* pseudo code */
+.group {
+  display: flex;
+  flex-direction: column;
+}
 
-a:link    { 
-  color:  black;  
-  }
+.item {
+  flex: 1;
+  margin: 10px;
+}
 
-a:visited { 
-  color: rgb(253, 0, 0); 
-  }
+.item-double {
+  flex: 2;
+}
 
-a:hover   { 
-  color: blue; 
-  }
+/* ---  (Desktop) Groups & Items --- */
 
-a:active  { 
-  color: hsl(120, 100%, 15%); 
+@media all and (min-width: 600px) {
+  section.contact {
+    display: flex;
+    flex-direction: column;
   }
+  /* div.group-img {
+    justify-content: center;
+    align-items: center;
+  } */
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Contact Form Design */
+
+form {
+  padding-right: 8px;
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
