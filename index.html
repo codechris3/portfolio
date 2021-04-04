@@ -6,70 +6,125 @@
     <title>Portfolio of Chris Skovgard</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Averia Libre' rel='stylesheet'>
    </head>
   
   <body>
+
     <header>
-      <div>
+      <div class="logo">
         <h1>Chris Skovgard</h1>
-        <h2>Software Engineer</h2>
+      </div>
         <nav>
-          <!--Creating links to anchors for three sections-->
-          <a href="#intro">Intro</a>
-          <a href="#about-me">About Me</a>
-          <a href="#contact">Contact</a>
+          <ul id="menu">
+            <!--Creating links to anchors for three sections-->
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
+
     <main>
-      <div>
-        <article>
-        <img src="images/my-picture.jpg" alt="Personal picture in a suit">
-        <h2>Intro</h2>
-          <section id="intro">
-            <!--Short intro with general likes-->
-            <h3>Who I am</h3>
-            <p>My name is Chris Skovgard and I am a Software Engineer in training from Long Beach, California.</p>
-            <h4>Some things I enjoy</h4>
-            <ul>
-              <li>Being outdoors! (beach, hiking, etc.)</li>
-              <li>Spending time with my friends and family</li>
-              <li>Playing with my dog</li>
-              <li>Enjoying a nice beer on a sunny day</li>
-            </ul>
-          </section>
-        </article>
-        <hr>
-        <article>
-          <h2>About Me</h2>
-          <section id="about-me">
-            <!--Longer bio, more geared towards my professional aspects-->
-            <h3>My Background</h3>
-            <p>I dabbled in app development when I was younger, but ultimately went down a path that led me into the manufacturing industry. After 5 successful years, I decided it was time to come back to finish what I had started.</p>
-            <p>I restarted my journey with Thinkful and am now learning to become a Software Engineer.</p>
-            <h4>Professionally speaking:</h4>
-            <ol>
-              <li>I've always been a hard worker</li>
-              <li>I work well on teams or individually</li>
-              <li>Honesty is a must</li>
-              <li>Communication is key</li>
-            </ol>
-            <p>Please feel free to <a href="#contact">contact</a> me so that I may help you with any of your development needs!</p>
-          </section>
-        </article>
-      </div>
-    </main>
-    <footer>
-      <div>
-        <section id="contact">
-          <h3>Contact</h3>
+
+      <section>
+        <div class="group">
+          <div class="item">
+          <img src="images/my-picture.jpg" alt="Personal picture in a suit" class="image-enhanced">
+          </div>
+          <div class="item">
+          <h2 id="welcome">Welcome, I'm Chris Skovgard!</h2>
+              <!--Short intro with general likes-->
+              <p>Thank you for stopping by! I'd like to take a second and introduce myself. I am a software engineering student working on completing my course from Thinkful. I currently live in Long Beach, California, in the greater Los Angeles area. I'm enjoying my time as a student, but I'm excited to enter the field and start making an impact on the development world.</p>
+              <p>Please feel free to take a look around, learn a little bit more about me, and be sure to check out some of the projects I have worked on.</p>  
+          </div>
+        </div>
+      </section>
+
+      <section class="dark-background">
+        <h2 id="about">About Me</h2>
+          <div class="group">
+            <!--Longer bio including both professional and personal aspects-->
+            <div class="item">
+              <p>I briefly flirted with software development in college, but ultimately chose another path. Since then it has always been in the back of my mind, biding its time until recently when I decided to make it my future. I am thrilled to once again be exploring a field that I enjoy. I look forward to showing others what I can achieve through my hard work and my drive to excel and have high anticipation of working with a team of skilled developers learning what I can while also sharing what I can.</p>
+              <p>When I'm not coding, I enjoy being as active as I can be. Soccer has always been a passion of mine, so I play whenever I get the opportunity and watch it when I don't. Also, travel and the great outdoors have always called to me. I believe in exploring this great big world of ours and learning as much as we can about it. </p>
+              <p>I look forward to the opportunity to work with you, so please feel free to <a href="#contact" class="light-link">contact</a> me so that I may help you with any of your development needs!</p>
+            </div>
+            <div class="item"><img src="images/soccer-gear.jpg" alt="Soccer cleats and ball on grass" class="image-enhanced"></div>
+          </div>
+      </section>
+
+          <!-- Portfolio -->
+      <section>
+          <h2 id="portfolio">Portfolio</h2>
+          <div class="group">
+            <div class="item">
+              <img src="images/placeholder.png" alt="TBD" class="rounded">
+              <h3>Project Title</h3>
+              <p>Description of the project and what I learned while creating it.</p>
+            </div>
+            <div class="item">
+              <img src="images/placeholder.png" alt="TBD" class="rounded">
+              <h3>Project Title</h3>
+              <p>Description of the project and what I learned while creating it.</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="item">
+              <img src="images/placeholder.png" alt="TBD" class="rounded">
+              <h3>Project Title</h3>
+              <p>Description of the project and what I learned while creating it.</p>
+            </div>
+            <div class="item">
+              <img src="images/placeholder.png" alt="TBD" class="rounded">
+              <h3>Project Title</h3>
+              <p>Description of the project and what I learned while creating it.</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="contact">
+        <div>
+          <h2 id="contact">Contact</h2>
           <!--Making my contact links the logos of where they are directing to-->
-          <a href="https://www.linkedin.com/in/chris-skovgard" target="_blank"><img  src="images/linked-in-logo.png" alt="linked-in picture"></a>
-          <a href="https://github.com/codechris3" target="_blank"><img src="images/github-logo.png" alt="github logo" class="large-radius"></a>
-          <a href="mailto:chrisskovgard@gmail.com" target="_blank"><img src="images/gmail-logo.jpg" alt="gmail logo"></a>
-        </section>
-      </div>
+          <div class="group-img">
+            <a href="https://www.linkedin.com/in/chris-skovgard" target="_blank"><img src="images/linked-in-logo.png"
+                alt="linked-in picture" class="image-link"></a>
+            <a href="https://github.com/codechris3" target="_blank"><img src="images/github-logo.png" alt="github logo"
+                class="image-link-radius"></a>
+            <a href="mailto:chrisskovgard@gmail.com" target="_blank"><img src="images/gmail-logo.jpg" alt="gmail logo" class="image-link"></a>
+          </div>
+          <div class="item-number">
+            <p>Phone #: <a href="tel:562-355-7367">(562) 355-7367</a></p>
+            <!-- <p>Email: <a href="mailto:chrisskovgard@email.com">chrisskovgard@email.com</a> -->
+          </div>
+          <div class="item">
+            <form action="https://formspree.io/chrisskovgard@gmail.com" method="post">
+              <label for="username">Name:</label>
+              <input id="username" type="text" name="name" placeholder="Enter your full name">
+            
+              <label for="email">Email:</label>
+              <input id="email" type="text" name="email" placeholder="Enter your email">
+            
+              <label for="form-message">Message:</label>
+              <textarea id="form-message" name="message" placeholder="Enter your message here"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer>
+      <p>© Chris Skovgard</p>
     </footer>
+
     <script src="script.js"></script>
+ 
   </body>
+
 </html>
